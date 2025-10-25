@@ -1,0 +1,25 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /home/coder/project/workspace/jenkins/workspace/firstDayJenkins
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Aarya-Deep-Jaiswal/Jenkins-LTI-25-10-25.git
+ > git init /home/coder/project/workspace/jenkins/workspace/firstDayJenkins # timeout=10
+Fetching upstream changes from https://github.com/Aarya-Deep-Jaiswal/Jenkins-LTI-25-10-25.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/Aarya-Deep-Jaiswal/Jenkins-LTI-25-10-25.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Aarya-Deep-Jaiswal/Jenkins-LTI-25-10-25.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 7fbc5d49474a644759a8b72836bfabfc04d74ec5 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7fbc5d49474a644759a8b72836bfabfc04d74ec5 # timeout=10
+Commit message: "first commit"
+First time build. Skipping changelog.
+[firstDayJenkins] $ /bin/sh -xe /tmp/jenkins14276656636954185801.sh
++ python3 project/add.py
+Add Function
+Finished: SUCCESS
